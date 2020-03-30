@@ -48,8 +48,21 @@ const person = {
     name: 'Elena',
     age: 20,
     log:log,
-    arrowLog:arrowLog
+    arrowLog:arrowLog,
+    delayLog : function(){
+        // const self = this
+        // setTimeout(function(){
+        //     console.log(self.name + ' ' + self.age);
+            
+        // },1000)
+
+        setTimeout(()=>{
+            console.log(this.name + ' ' + this.age);
+        },1000)
+    }
 }
 
-person.log();
-person.arrowLog();
+// person.log();
+// person.arrowLog();
+
+person.delayLog();
