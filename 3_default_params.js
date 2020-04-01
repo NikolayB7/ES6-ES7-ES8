@@ -8,3 +8,4 @@ function compute(a,b =getDefault(10)){
 }
 
 console.log(compute(20));
+
