@@ -91,13 +91,45 @@ const array = [1,2,3,5,8,13];
 
 //Object
 
-const  addres = {
+const  address = {
     country: 'Ukraine',
-    citi: 'Dnipro',
+    city: 'Dnipro',
     street: 'Lenina',
     concat:function(){
-        return `${this.country}, ${this.citi}, ${this.street} `
+        return `${this.country}, ${this.city}, ${this.street} `
     }
 }
 
-// console.log(addres.concat());
+// console.log(address.concat());
+
+
+// ********************************************
+
+//Destructuring обьекта:
+
+
+/*
+const {city,country,street,concat} = address;
+console.log(city);
+console.log(concat.call(address)); //используй метод call  в контекст которого передаетм address
+*/
+
+/*
+const {city,country,street = "st.Marksa",concat:addressConcat} = address;     // st.Marksa - значение по умолчанию , addressConcat - рез вып ф-ии переместили в перем.
+console.log(street);
+console.log(addressConcat.call(address));
+*/
+
+/*
+const {city,...rest} = address;
+
+console.log(city);  //Dnipro
+console.log(rest);  //Массив со всеми элементами обьекта address кроме city 
+*/
+
+
+const newAddress = {...address,street:"st.Polya",code:123}      //Создаем новый обьект на основе address, при этом можно перезаписать существующие поля и добавить новые 
+console.log(address);
+console.log(newAddress);
+
+
