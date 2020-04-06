@@ -1,0 +1,17 @@
+https://www.youtube.com/watch?v=Ti2Q4sQkNdU&t=1s
+
+
+1:41 let const
+12:18 Стрелочные функции
+23:57 Параметры по умолчанию
+28:03 Строки
+36:06 Rest / Spread
+53:12 Объекты
+1:04:03 Модули (import / export)
+1:09:36 Классы
+1:20:36 Symbol
+1:26:17 Итераторы / генераторы
+1:35:36 Промисы (async / await)
+1:45:37 Map Set
+1:53:06 Reflect
+1:59:23 Proxy
